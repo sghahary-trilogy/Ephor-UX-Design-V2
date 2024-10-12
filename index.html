@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" data-layout-mode="two-column" data-two-column-color="brand">
+    <head>
+        <meta charset="utf-8" />
+        <title>E P H O R</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/logos/ephor-mark.png">
+
+        <!-- plugin css -->
+
+		<!-- App css -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/app.css" rel="stylesheet" type="text/css" id="app-stylesheet" />
+
+		<!-- icons -->
+		<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- Theme Config Js -->
+		<script src="assets/js/config.js"></script>
+
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            
+            <!-- Topbar Start -->
+            <div class="navbar-custom">
+                <div class="container-fluid">
+    
+                    <ul class="list-unstyled topnav-menu float-end mb-0">
+    
+                        <li class="d-none d-md-inline-block">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light"  id="light-dark-mode" href="#">
+                                <i class="fe-moon noti-icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="dropdown d-none d-lg-inline-block">
+                            <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="fullscreen" href="#">
+                                <i class="fe-maximize noti-icon"></i>
+                            </a>
+                        </li>
+
+                        <li class="d-none d-md-inline-block">
+                            <a class="nav-link waves-effect waves-light" data-bs-toggle="offcanvas" href="#right-column" >
+                                <i class="fa-light fa-left-from-bracket noti-icon"></i>
+                            </a>
+                        </li>
+    
+                    </ul>
+
+                    <!-- LOGO -->
+                    <div class="logo-box">
+                        <a href="index.html" class="logo logo-dark text-center">
+                            <span class="logo-sm">
+                                <img src="assets/images/logos/ephor.svg" alt="" height="24">
+                                <!-- <span class="logo-lg-text-light">EPHOR</span> -->
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logos/ephor.svg" alt="" height="20">
+                                <!-- <span class="logo-lg-text-light">E</span> -->
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light text-center">
+                            <span class="logo-sm">
+                                <img src="assets/images/logos/ephor.svg" alt="" height="24">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logos/ephor.svg" alt="" height="20">
+                            </span>
+                        </a>
+                    </div>
+    
+                    <ul class="list-unstyled topnav-menu topnav-menu-left m-0">
+                        <li>
+                            <button class="button-menu-mobile waves-effect waves-light">
+                                <i class="fe-menu"></i>
+                            </button>
+                        </li>
+
+                        <li>
+                            <!-- Mobile menu toggle (Horizontal Layout)-->
+                            <a class="navbar-toggle nav-link" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+               
+                    </ul>
+
+                    <div class="page-title-box">
+                        <h4 class="page-title">#CEOInvestigation</h4>
+                        <div class="page-title-right">
+                            <div class="d-flex justify-content-between gap-2">
+                                <div class="me-2">
+                                    <a href="#"><i class="fa-light fa-code-branch noti-icon icon-fix"></i></a>
+                                    <a href="#"></a><i class="fa-light fa-download noti-icon icon-fix"></i></a>
+                                </div>
+                                <div class="dropdown m-0">
+                                    <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-lock me-1"></i>Sonnet 3.5<i class="fa-solid fa-angle-down ms-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                        <a class="dropdown-item" href="#">Sonnet 3.5</a>
+                                        <a class="dropdown-item" href="#">Perplexity</a>
+                                        <a class="dropdown-item" href="#">Llama 405B</a>
+                                        <a class="dropdown-item" href="#">Gemeni 1.5 Pro</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="dropdown m-0">
+                                    <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-solid fa-lock me-1"></i>Private<i class="fa-solid fa-angle-down ms-1"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Private</a>
+                                        <a class="dropdown-item" href="#">Shared</a>
+                                        <a class="dropdown-item" href="#">Multi-User</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Topbar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left-side-menu">
+
+                <div class="h-100">
+
+                    <div class="sidebar-content">
+                        <div class="sidebar-icon-menu h-100" data-simplebar>
+                            <!-- LOGO -->
+                            <a href="index.html" class="logo">
+                                <span>
+                                    <img src="assets/images/logos/ephor-mark-E.svg" alt="" height="28">
+                                </span>
+                            </a>
+
+                            <nav class="nav flex-column" id="two-col-sidenav-main">
+                                <a class="nav-link" href="#projects" title="Projects">
+                                    <i class="fa-light fa-objects-column"></i>
+                                </a>
+                            </nav>
+
+                            <nav class="nav flex-column" id="">
+                                <a class="nav-link" href="#metrics" title="metrics">
+                                    <i class="fa-light fa-chart-column"></i>
+                                </a>
+                            </nav>
+
+                            <nav class="nav flex-column align-items-end" id="profile">
+                                <a class="nav-link" href="#profile" title="Profile">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user-img" title="User Name" class="rounded-circle avatar-sm avator-fixed">
+                                </a>
+                            </nav>
+                           
+                        </div>
+                        <!--- Sidemenu -->
+                        <div class="sidebar-main-menu">
+                            <!-- LOGO -->
+                            <div class="logo-box">
+                                <a href="index.html" class="logo logo-dark text-center">
+                                    <span class="logo-sm">
+                                        <img src="assets/images/logo-sm-dark.png" alt="" height="24">
+                                        <!-- <span class="logo-lg-text-light">Minton</span> -->
+                                    </span>
+                                    <span class="logo-lg">
+                                        <img src="assets/images/logo-dark.png" alt="" height="20">
+                                        <!-- <span class="logo-lg-text-light">M</span> -->
+                                    </span>
+                                </a>
+
+                                <a href="index.html" class="logo logo-light text-center">
+                                    <span class="logo-sm">
+                                        <img src="assets/images/logo-sm.png" alt="" height="24">
+                                    </span>
+                                    <span class="logo-lg">
+                                        <img src="assets/images/logo-light.png" alt="" height="20">
+                                    </span>
+                                </a>
+                            </div>
+
+                
+                            <div id="two-col-menu" class="h-100" data-simplebar>
+
+                                <div class="twocolumn-menu-item d-block" id="projects">
+                                    <div class="title-box">
+
+                                        <ul class="nav flex-column">
+
+                                            <div class="dropdown nav-button">
+                                                <a class="btn btn-sm btn-secondary dropdown-toggle nav-button" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    SaaS Budget Review<i class="fa-solid fa-angle-down ms-1"></i>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item nav-button" href="#">Another Project Name</a>
+                                                    <a class="dropdown-item nav-button" href="#">This will be a longer Project Name to show an Example</a>
+                                                    <a class="dropdown-item nav-button" href="#">Test Name</a>
+                                                    <hr class="mb-1 mt-1">
+                                                    <a class="btn btn-sm btn-primary nav-button" href="#"><i class="fa-solid fa-plus me-1"></i>NEW Project</a>
+                                                </div>
+                                            </div>
+
+                                            <hr class="mb-2">
+
+                                            <h5 class="menu-title">Private Chats</h5>
+
+                                            <h5 class="menu-title">Shared Chats</h5>
+
+                                            <h5 class="menu-title">Multi-User Chats</h5>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CEO Investigation</a>
+                                            </li>
+
+                                            <hr class="mb-2">
+                                            
+                                            <a class="btn btn-sm btn-primary nav-button" href="#"><i class="fa-solid fa-plus me-1"></i>NEW Chat</a>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="twocolumn-menu-item" id="profile">
+                                    <div class="title-box">
+                                        <h5 class="menu-title">Profile</h5>
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a href="#sidebarIcons" data-bs-toggle="collapse" class="nav-link">
+                                                    <span> Settings </span>
+                                                    <span class="menu-arrow"></span>
+                                                </a>
+                                                <div class="collapse" id="sidebarIcons">
+                                                    <ul class="nav-second-level">
+                                                        <li>
+                                                            <a href="icons-feather.html">Feather</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="icons-remix.html">Remix</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="icons-boxicons.html">Boxicons</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="icons-mdi.html">Material Design</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="icons-font-awesome.html">Font Awesome 5</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="icons-weather.html">Weather</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- End Sidebar -->
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <div class="row mb-2">
+                            <div class="col-md-12">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control ai-lg" placeholder="How can EPHOR help you today?" aria-label="How can EPHOR help you today?">
+                                            <button class="btn btn-primary waves-effect waves-light ai-button" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="d-flex justify-content-between">
+                                        
+                                        <!--<div class="dropdown m-0">
+                                            <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Fastest Response Time<i class="fa-solid fa-angle-down ms-1"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Another Filter</a>
+                                                <a class="dropdown-item" href="#">Another Filter</a>
+                                                <a class="dropdown-item" href="#">Another Filter</a>
+                                                <a class="dropdown-item" href="#">Another Filter</a>
+                                                <a class="dropdown-item" href="#">Another Filter</a>
+                                            </div>
+                                        </div>-->
+
+                                        <div class="gap-1">
+                                            <a href="#"><i class="fa-sharp fa-regular fa-angle-left me-1"></i></a>
+                                            <button class="btn btn-sm btn-outline-secondary" type="button" aria-haspopup="true" aria-expanded="false">
+                                                AI – List any recommendations for developing this project.</button>
+                                            <button class="btn btn-sm btn-outline-secondary" type="button" aria-haspopup="true" aria-expanded="false">
+                                                AI – What is the expected outcome of this analysis?</button>
+                                            <button class="btn btn-sm btn-outline-secondary" type="button" aria-haspopup="true" aria-expanded="false">
+                                                AI – Provide a document output for AWS.</button>
+                                            <a href="#"><i class="fa-sharp fa-regular fa-angle-right ms-1"></i></a>
+                                        </div>
+
+                                        <!--<div class="">
+                                            <label class="ai-toggle" for="toggle-response">Auto Swap Response</label>
+                                            <input type="checkbox" class="ms-1 input-lg" id="toggle-response" autocomplete="off" checked>
+                                        </div>-->
+                                    
+                                        <div class="gap-1">
+
+                                            <input type="checkbox" class="btn-check" id="toggle-response" autocomplete="off" checked>
+                                            <label class="btn btn-sm btn-outline-primary" for="toggle-response">Auto Swap Response</label>
+                                        
+                                            <input type="checkbox" class="btn-check" id="toggle-chats" autocomplete="off">
+                                            <label class="btn btn-sm btn-outline-primary" for="toggle-chats">Use All Chats</label>
+
+                                            <input type="checkbox" class="btn-check" id="toggle-internet" autocomplete="off" checked>
+                                            <label class="btn btn-sm btn-outline-primary" for="toggle-internet">Internet</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--<div class="row mb-1">
+                            <div class="d-flex justify-content-center gap-1">
+
+                                <div class="card mb-1 mt-0">
+                                    <div class="card-body p-1">
+                                        <h6 class="mb-1 text-center"><3s Response</h6>
+                                        <div class="d-flex justify-content-center gap-1 p-1">
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
+                                                <img src="assets/images/icons/perplexityai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
+                                                <img src="assets/images/icons/gemini.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-3">
+                                                <img src="assets/images/icons/openai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/bing.svg" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card mb-1 mt-0">
+                                    <div class="card-body p-1">
+                                        <h6 class="mb-1 text-center"><10s Response</h6>
+                                        <div class="d-flex justify-content-center gap-1 p-1">
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/claude-logo.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-3">
+                                                <img src="assets/images/icons/azureopenai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/falcon.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/qwen2.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/orca-mini.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card mb-1 mt-0">
+                                    <div class="card-body p-1">
+                                        <h6 class="mb-1 text-center">>10s Response</h6>
+                                        <div class="d-flex justify-content-center gap-1 p-1">
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
+                                                <img src="assets/images/icons/llamaai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/copilotai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-3">
+                                                <img src="assets/images/icons/huggingface.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/dollyai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/mistralai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/replit.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> -->
+
+                        <div class="mb-1">
+                            
+                                <div class="card mb-1 mt-0">
+                                    <div class="card-body p-1">
+
+                                        <div class="d-flex justify-content-center gap-1">
+                                            
+                                        <div class="d-flex justify-content-center gap-1 p-1">
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
+                                                <img src="assets/images/icons/perplexityai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
+                                                <img src="assets/images/icons/gemini.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-3">
+                                                <img src="assets/images/icons/openai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/bing.svg" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                        </div>
+
+                                        <div class="small measures"><3s</div>
+                                        
+                                        <div class="d-flex justify-content-center gap-1 p-1">
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
+                                                <img src="assets/images/icons/claude-logo.png" class="img img-fluid icon-ai avatar-title">
+                                                <i class="fa-solid fa-circle small indicator"></i>
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-3">
+                                                <img src="assets/images/icons/azureopenai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/falcon.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/qwen2.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/orca-mini.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                        </div>
+
+                                        <div class="small measures">>10s</div>
+
+                                        <div class="d-flex justify-content-center gap-1 p-1">
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
+                                                <img src="assets/images/icons/llamaai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/copilotai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-3">
+                                                <img src="assets/images/icons/huggingface.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/dollyai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/mistralai.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                            <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
+                                                <img src="assets/images/icons/replit.png" class="img img-fluid icon-ai avatar-title">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        
+                                        <div class="card no-border mb-0">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-star gap-2">
+                                                    <div class="">
+                                                        <img src="assets/images/users/avatar-1.jpg" alt="user-img" title="User Name" class="rounded-circle avatar-sm">
+                                                    </div>
+                                                    <div class="">
+                                                        <h5 class="mb-0 mt-0">Salar Ghahary <span class="small ms-1">12:54 PM</span></h5>
+                                                        <p>What is the expected $ and % reduction in AWS from Q3 to Q4?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card ephor mb-0">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-star gap-2">
+                                                    <div class="">
+                                                        <img src="assets/images/logos/ephor-mark.svg" alt="user-img" title="User Name" class="rounded-circle avatar-sm">
+                                                    </div>
+                                                    <div class="">
+                                                        <h5 class="mb-0 mt-0">EPHOR <span class="small ms-1">(Sonnet 3.5) 12:55 PM</span></h5>
+                                                        <p>Based on the information provided in the context, the expected reduction in AWS costs from Q3 to Q4 is as follows:</p>
+                                                            <ul>
+                                                                <li>Percentage reduction: 5.2%</li>
+                                                                <li>Dollar amount: While not explicity stated, we can estimate the dollar amount based on the given information:</li>
+                                                                    <ul>
+                                                                        <li>The context mentions a 5.2% reduction in AWS costs</li>
+                                                                        <li>It's noted that there's a 7% decrease in NHC COGS to $6M in Q4, driven primarily by this 5.2% reduction in AWS costs.</li>
+                                                                    </ul>
+                                                            </ul>
+                                                            <p>Without knowing the exact Q3 AWS costs, we can't provide a precise dollar figure. However, given that the reduction is described as "significant" and is the primary driver of the overall 7% decrease in COGS, we can infer that the dollar amount is substantial.</p>
+                                                            <p>It's important to note that this reduction is part of ongoing cost optimization efforts, including:</p>
+                                                                <ul>
+                                                                    <li>Working with Virtasant and CloudFix to identify and execute cost savings</li>
+                                                                    <li>Building tooling to allow for ongoing cost optimization using SaaSOps and AI-generated runbooks</li>
+                                                                    <li>Utilizing the CloudFix DevOps Team to drive down costs on an ogoing basis</li>
+                                                                </ul>
+                                                        <p class="mb-0">These initiatives are part of a larger goal to optimize AWS spend by $1.5M/year ahead of the the AWS EDP renewal in the following year.</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-sm btn-primary ephor-tag"><i class="fa-sharp fa-light fa-trophy"></i></a>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card no-border mb-0">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-star gap-2">
+                                                    <div class="">
+                                                        <img src="assets/images/users/avatar-1.jpg" alt="user-img" title="User Name" class="rounded-circle avatar-sm">
+                                                    </div>
+                                                    <div class="">
+                                                        <h5 class="mb-0 mt-0">Salar Ghahary <span class="small ms-1">12:57 PM</span></h5>
+                                                        <p>How is SaaS OPs working to reduce technical debt in our SaaS products, like depreciated servies from AWS?</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+        <!-- Right Sidebar -->
+        <div class="offcanvas offcanvas-end right-bar" tabindex="-1" id="right-column" data-bs-scroll="true" data-bs-backdrop="true" >
+         text
+        </div>
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- Vendor js -->
+        <script src="assets/js/vendor.min.js"></script>
+
+        <!-- KNOB JS -->
+        <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+
+        <!-- Font Awesome js-->
+        <script src="https://kit.fontawesome.com/feefdea507.js" crossorigin="anonymous"></script>
+
+        <!-- Page Plugins -->
+
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+        
+    </body>
+</html>
