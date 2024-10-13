@@ -1502,7 +1502,11 @@ html[data-layout-mode=two-column] .sidebar-main-menu .nav .nav-link {
 html[data-layout-mode=two-column] .sidebar-main-menu .nav .nav-link:hover, html[data-layout-mode=two-column] .sidebar-main-menu .nav .nav-link:focus, html[data-layout-mode=two-column] .sidebar-main-menu .nav .nav-link.active {
   color: var(--bs-menu-item-active);
 }
-html[data-layout-mode=two-column] .sidebar-main-menu .nav .menuitem-active > a.nav-link {
+html[data-layout-mode=two-column] .sidebar-main-menu .nav .menuitem-active > a.nav-link:active {
+  color: var(--bs-menu-item-active);
+  background-color: var(--bs-menu-item-active-bg);
+}
+html[data-layout-mode=two-column] .sidebar-main-menu .nav .menuitem-active > a.nav-link:hover {
   color: var(--bs-menu-item-active);
   background-color: var(--bs-menu-item-active-bg);
 }
@@ -7315,4 +7319,13 @@ span.flatpickr-weekday,
   left: 11px;
   font-size: 5px;
   color: #6559cb;
+}
+
+.settings {
+  position: fixed;
+  bottom: 10px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  width: 210px;
 }
