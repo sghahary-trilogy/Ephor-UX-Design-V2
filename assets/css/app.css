@@ -33,6 +33,10 @@ html[data-bs-theme=dark] {
   --bs-box-shadow-sm: 0 0.75rem 0.6rem rgba(56, 65, 74,.03);
   --bs-box-shadow-lg: 0 0 45px 0 rgba(0, 0, 0, 0.12);
   --bs-box-shadow-inset: inset 0 1px 1px rgba(0, 0, 0, .075);
+  .ephor {
+    background-color: transparent;
+    border: 1px solid #4a545e;
+  }
 }
 
 html[data-menu-color=light] {
