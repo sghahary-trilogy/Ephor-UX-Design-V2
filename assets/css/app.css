@@ -7232,10 +7232,18 @@ span.flatpickr-weekday,
   border: 2px solid #dcc4f8;
   box-shadow: 0 0.75rem 0.6rem rgba(56, 65, 74,.03);
   font-size: 15px;
+  border-radius: 30px !important;
+  width: 100% !important;
 }
 
 .ai-button {
-  margin-bottom: 15px;
+  position: relative !important;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
 }
 
 .ai-toggle {
@@ -7332,4 +7340,10 @@ span.flatpickr-weekday,
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
   width: 210px;
+}
+
+.input-group .ai-button {
+  background-color: #007bff; /* Change to your desired color */
+  border: none;
+  color: white;
 }
