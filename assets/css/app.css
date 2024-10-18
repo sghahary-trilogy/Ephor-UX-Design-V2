@@ -7218,49 +7218,36 @@ span.flatpickr-weekday,
   position: absolute;
 }
 
-/* Custom Overrides 
 
+/* CSS */
 .btn-primary {
-	box-shadow: 0px 10px 14px -7px #899599;
-	background:linear-gradient(to bottom, #ffebff 5%, #d9bfd9 100%);
-	background-color:#ffebff;
-	display:inline-block;
-	cursor:pointer;
-	color:#8f3a9c;
-	font-weight:bold;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #e1e2ed;
-  border: 1px solid #d9bfd9;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #f0c6ff 0%, #934fba 100% );
+  box-shadow: 0px 2px 4px rgb(175 50 170 / 40%), 0px 7px 13px -3px rgb(175 50 170 / 30%), inset 0px -3px 0px rgb(175 50 170 / 50%);
+  color: #fff;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
 }
+
 .btn-primary:hover {
-	background:linear-gradient(to bottom, #d9bfd9 5%, #ffebff 100%);
-	background-color:#d9bfd9;
-  color:#8f3a9c;
+  box-shadow: 0px 4px 8px rgb(175 50 170 / 40%), 0px 7px 13px -3px rgb(175 50 170 / 30%), inset 0px -3px 0px #934fba;
+  transform: translateY(-2px);
 }
+
 .btn-primary:active {
-	position:relative;
-	top:1px;
+  box-shadow: inset 0px 3px 7px #934fba;
+  transform: translateY(2px);
 }
 
-.btn-primary-dark {
-  box-shadow: none;
-}
-
-*/
-
-.btn-outline-primary {
-}
 
 .ai-lg {
-  min-height: 50px;
+  min-height: 40px;
   margin-bottom: 15px;
-  border: 2px solid #dcc4f8;
-  box-shadow: 0 0.75rem 0.6rem rgba(56, 65, 74,.03);
-  font-size: 15px;
-}
-
-.ai-button {
-  margin-bottom: 15px;
+  border: none;
+  font-size: 18px;
 }
 
 .ai-toggle {
@@ -7361,28 +7348,130 @@ span.flatpickr-weekday,
 }
 
 .input-group .ai-button {
-  border-radius: 50%;
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: -1px;
+  border-radius: 50% !important;
 }
 
 .input-group .form-control {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important;
+  border: none;
+  padding-left: 5px;
 }
 
-.btn-primary {
-  cursor: pointer;
+.input-container {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 15px;
+  padding-right: 50px;
+  height: 150px;
+  font-size: 18px;
+  border: non
+  border-radius: 5px;
+}
+
+.submit-button {
+  position: absolute;
+  right: 110px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.toggle-group {
+  position: absolute;
+  left: 15px;
+  bottom: 5px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle-label {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.bg-none {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.btn-outline-secondary {
+  border: 1px solid #934fba;
+}
+
+.card-highlight {
+  border: 1px solid #934fba;
   border-radius: 10px;
-  font-weight: 600;
-  background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
-  box-shadow: 0 -0.25rem 1.5rem rgba(110, 15, 155, .5) inset,
-              0 0.75rem 0.5rem rgba(255,255,255, 0.4) inset,
-              0 0.25rem 0.5rem 0 rgba(180, 70, 207, 1) inset;
 }

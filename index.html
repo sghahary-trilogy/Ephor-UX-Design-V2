@@ -206,7 +206,7 @@
                                         <ul class="nav flex-column">
 
                                             <div class="dropdown">
-                                                <a class="btn btn-sm btn-primary nav-button btn-primary-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <a class="btn btn-sm btn-primary nav-button dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     SaaS Budget Review<i class="fa-solid fa-angle-down ms-1"></i>
                                                 </a>
                                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -321,22 +321,44 @@
 
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <!--<div class="input-group">
-                                            <input type="text" class="form-control ai-lg" placeholder="How can EPHOR help you today?" aria-label="How can EPHOR help you today?">
-                                            <button class="btn btn-primary waves-effect waves-light ai-button" type="button"><i class="fa-solid fa-paper-plane"></i></button>
-                                        </div>-->
-                                        <div class="input-group" style="position: relative;">
-                                            <input type="text" class="form-control ai-lg" placeholder="How can EPHOR help you today?" aria-label="How can EPHOR help you today?" style="padding-right: 50px;">
-                                            <button class="btn btn-primary waves-effect waves-light ai-button rounded-circle" type="button">
-                                                <i class="fa-solid fa-paper-plane"></i>
-                                            </button>
+
+                                        <div class="card mb-2 card-highlight">
+                                            <div class="card-body">
+                                                <div class="row mb-2">
+                                                    <div class="input-group" style="position: relative;">
+                                                        <input type="text" class="form-control ai-lg" placeholder="How can EPHOR help you today?" aria-label="How can EPHOR help you today?" style="padding-right: 50px;">
+                                                        <button class="btn btn-primary waves-effect waves-light ai-button" type="button">
+                                                            <i class="fa-solid fa-paper-plane"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="toggle-group">
+                                                        <label class="toggle">
+                                                          <input type="checkbox">
+                                                          <span class="slider round"></span>
+                                                        </label>
+                                                        <span class="toggle-label">Use All Chats</span>
+                                                        <label class="toggle">
+                                                          <input type="checkbox">
+                                                          <span class="slider round"></span>
+                                                        </label>
+                                                        <span class="toggle-label">Internet</span>
+                                                        <label class="toggle">
+                                                            <input type="checkbox">
+                                                            <span class="slider round"></span>
+                                                        </label>
+                                                        <span class="toggle-label">Auto Swap Response</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="d-flex justify-content-between">
+                                    <div class="d-flex justify-content-center">
                                         
                                         <!--<div class="dropdown m-0">
                                             <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -367,17 +389,6 @@
                                             <input type="checkbox" class="ms-1 input-lg" id="toggle-response" autocomplete="off" checked>
                                         </div>-->
                                     
-                                        <div class="gap-1">
-
-                                            <input type="checkbox" class="btn-check" id="toggle-response" autocomplete="off" checked>
-                                            <label class="btn btn-sm btn-outline-primary" for="toggle-response">Auto Swap Response</label>
-                                        
-                                            <input type="checkbox" class="btn-check" id="toggle-chats" autocomplete="off">
-                                            <label class="btn btn-sm btn-outline-primary" for="toggle-chats">Use All Chats</label>
-
-                                            <input type="checkbox" class="btn-check" id="toggle-internet" autocomplete="off" checked>
-                                            <label class="btn btn-sm btn-outline-primary" for="toggle-internet">Internet</label>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -461,7 +472,7 @@
 
                         <div class="mb-1">
                             
-                                <div class="card mb-1 mt-0">
+                                <div class="card mb-1 mt-0 bg-none">
                                     <div class="card-body p-1">
 
                                         <div class="d-flex justify-content-center flex-wrap gap-1">
@@ -479,11 +490,7 @@
                                             <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
                                                 <img src="assets/images/icons/bing.svg" class="img img-fluid icon-ai avatar-title">
                                             </div>
-                                        </div>
 
-                                        <div class="small measures"><3s</div>
-                                        
-                                        <div class="d-flex justify-content-center gap-1 p-1">
                                             <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
                                                 <img src="assets/images/icons/claude-logo.png" class="img img-fluid icon-ai avatar-title">
                                                 <i class="fa-solid fa-circle small indicator"></i>
@@ -500,11 +507,7 @@
                                             <div class="avatar-sm rounded-circle bg-icon-dark ring-4">
                                                 <img src="assets/images/icons/orca-mini.png" class="img img-fluid icon-ai avatar-title">
                                             </div>
-                                        </div>
 
-                                        <div class="small measures">>10s</div>
-
-                                        <div class="d-flex justify-content-center gap-1 p-1">
                                             <div class="avatar-sm rounded-circle bg-icon-dark ring-1">
                                                 <img src="assets/images/icons/llamaai.png" class="img img-fluid icon-ai avatar-title">
                                             </div>
