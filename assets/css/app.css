@@ -130,8 +130,8 @@ body {
 .content-page {
   margin-left: 240px;
   overflow: hidden;
-  padding: 85px 5px 55px 5px;
-  min-height: 80vh;
+  padding: 75px 5px 55px 5px;
+  min-height: 75vh;
 }
 
 .left-side-menu {
@@ -674,7 +674,7 @@ html[dir=rtl] .menu-arrow::before {
   left: 240px;
   right: 0;
   top: 0;
-  height: 70px;
+  height: 55px;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   z-index: 1001;
@@ -691,9 +691,9 @@ html[dir=rtl] .menu-arrow::before {
   color: var(--bs-topbar-item-color);
   min-width: 32px;
   display: block;
-  line-height: 70px;
+  line-height: 55px;
   text-align: center;
-  max-height: 70px;
+  max-height: 55px;
 }
 .navbar-custom .dropdown .nav-link.show {
   background-color: rgba(255, 255, 255, 0.1);
@@ -772,8 +772,8 @@ html[dir=rtl] .menu-arrow::before {
   border: none;
   color: var(--bs-topbar-item-color);
   display: inline-block;
-  height: 70px;
-  line-height: 70px;
+  height: 55px;
+  line-height: 55px;
   width: 60px;
   background-color: transparent;
   font-size: 24px;
@@ -1043,8 +1043,8 @@ html[data-bs-theme=dark] .navbar-custom .logo-box .logo-dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -27px 30px;
-  padding: 20px 5px;
+  margin: 0 -27px 0px;
+  padding: 14px 5px;
 }
 .page-title-box .page-title {
   font-size: 1.1rem;
