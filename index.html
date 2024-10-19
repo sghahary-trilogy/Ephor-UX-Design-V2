@@ -36,7 +36,7 @@
     
                     <ul class="list-unstyled topnav-menu float-end mb-0">
     
-                        <li class="d-none d-md-inline-block">
+                        <!--<li class="d-none d-md-inline-block">
                             <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light"  id="light-dark-mode" href="#">
                                 <i class="fe-moon noti-icon"></i>
                             </a>
@@ -46,7 +46,7 @@
                             <a class="nav-link dropdown-toggle arrow-none waves-effect waves-light" data-toggle="fullscreen" href="#">
                                 <i class="fe-maximize noti-icon"></i>
                             </a>
-                        </li>
+                        </li>-->
 
                         <li class="d-none d-md-inline-block">
                             <a class="nav-link waves-effect waves-light" data-bs-toggle="offcanvas" href="#right-column" >
@@ -104,23 +104,8 @@
                         <h4 class="page-title">#CEOInvestigation</h4>
                         <div class="page-title-right">
                             <div class="d-flex justify-content-between gap-2">
-                                <div class="me-2">
-                                    <a href="#"><i class="fa-light fa-code-branch noti-icon icon-fix"></i></a>
-                                    <a href="#"></a><i class="fa-light fa-download noti-icon icon-fix"></i></a>
-                                </div>
-                                <div class="dropdown m-0">
-                                    <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Sonnet 3.5<i class="fa-solid fa-angle-down ms-1"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                        <a class="dropdown-item" href="#">Sonnet 3.5</a>
-                                        <a class="dropdown-item" href="#">Perplexity</a>
-                                        <a class="dropdown-item" href="#">Llama 405B</a>
-                                        <a class="dropdown-item" href="#">Gemeni 1.5 Pro</a>
-                                    </div>
-                                </div>
                                 
-                                <div class="dropdown m-0">
+                                <div class="dropdown m-0 me-2">
                                     <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <i class="fa-solid fa-lock me-1"></i>Private<i class="fa-solid fa-angle-down ms-1"></i>
                                     </button>
@@ -130,6 +115,23 @@
                                         <a class="dropdown-item" href="#">Multi-User</a>
                                     </div>
                                 </div>
+
+                                <div class="dropdown m-0">
+                                    <button class="nav-link noti-icon dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa-regular fa-ellipsis-vertical"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#"><i class="fa-light fa-code-branch me-1"></i>Fork Chat</a>
+                                        <a class="dropdown-item" href="#"><i class="fa-light fa-download me-1"></i>Download Assets</a>
+                                        <a class="dropdown-item" id="light-dark-mode" href="#">
+                                            <i class="fe-moon me-1"></i>Dark Mode
+                                        </a>
+                                        <a class="dropdown-item" data-toggle="fullscreen" href="#">
+                                            <i class="fe-maximize me-1"></i>Full Screen
+                                        </a>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -198,7 +200,7 @@
                             </div>
 
                 
-                            <div id="two-col-menu" class="h-100" data-simplebar>
+                            <div id="two-col-menu" class="h-100 pt-2" data-simplebar>
 
                                 <div class="twocolumn-menu-item d-block" id="projects">
                                     <div class="title-box">
@@ -322,14 +324,12 @@
                                 <div class="row">
                                     <div class="col-md-12">
 
-                                        <div class="card mb-2 card-highlight">
-                                            <div class="card-body">
+                                        <div class="card mb-3 card-highlight">
+                                            <div class="card-body p-2">
                                                 <div class="row mb-2">
                                                     <div class="input-group" style="position: relative;">
                                                         <input type="text" class="form-control ai-lg" placeholder="How can EPHOR help you today?" aria-label="How can EPHOR help you today?" style="padding-right: 50px;">
-                                                        <button class="btn btn-primary waves-effect waves-light ai-button" type="button">
-                                                            <i class="fa-solid fa-paper-plane"></i>
-                                                        </button>
+
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -350,6 +350,27 @@
                                                         </label>
                                                         <span class="toggle-label">Auto Swap Response</span>
                                                     </div>
+
+                                                    <div class="d-flex justify-content-end flex-wrap gap-2">
+
+                                                        <div class="dropdown m-0">
+                                                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                Sonnet 3.5<i class="fa-solid fa-angle-down ms-1"></i>
+                                                            </button>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                                <a class="dropdown-item" href="#">Sonnet 3.5</a>
+                                                                <a class="dropdown-item" href="#">Perplexity</a>
+                                                                <a class="dropdown-item" href="#">Llama 405B</a>
+                                                                <a class="dropdown-item" href="#">Gemeni 1.5 Pro</a>
+                                                            </div>
+                                                        </div>
+
+                                                        <button class="btn btn-sm btn-primary waves-effect waves-light ai-button" type="button">
+                                                            <i class="fa-solid fa-paper-plane"></i>
+                                                        </button>
+
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -536,6 +557,7 @@
 
                         <div class="row">
                             <div class="col-md-12">
+
                                 <div class="card">
                                     <div class="card-body">
                                         
@@ -580,10 +602,18 @@
                                                         <p class="mb-0">These initiatives are part of a larger goal to optimize AWS spend by $1.5M/year ahead of the the AWS EDP renewal in the following year.</p>
                                                     </div>
                                                 </div>
-                                                <a href="#" class="btn btn-sm btn-primary ephor-tag"><i class="fa-sharp fa-light fa-trophy"></i></a>
+                                                <a href="#" class="btn btn-sm btn-outline-secondary ephor-tag"><i class="fa-sharp fa-light fa-trophy"></i></a>
+                                                <a href="#" class="btn btn-sm btn-outline-secondary ephor-tag"><i class="fa-light fa-thumbs-up"></i></a>
+                                                <a href="#" class="btn btn-sm btn-outline-secondary ephor-tag"><i class="fa-light fa-thumbs-down"></i></a>
                                             </div>
                                         </div>
 
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        
                                         <div class="card no-border mb-0">
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-star gap-2">
@@ -591,12 +621,49 @@
                                                         <img src="assets/images/users/avatar-1.jpg" alt="user-img" title="User Name" class="rounded-circle avatar-sm">
                                                     </div>
                                                     <div class="">
-                                                        <h5 class="mb-0 mt-0">Salar Ghahary <span class="small ms-1">12:54 PM</span></h5>
-                                                        <p>What is the expected $ and % reduction in AWS from Q3 to Q4?</p>
+                                                        <h5 class="mb-0 mt-0">Salar Ghahary <span class="small ms-1">12:57 PM</span></h5>
+                                                        <p>How is SaaS OPs working to reduce technical debt in our SaaS products, like depreciated servies from AWS?</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="card ephor mb-0">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-star gap-2">
+                                                    <div class="">
+                                                        <img src="assets/images/logos/ephor-mark.svg" alt="user-img" title="User Name" class="rounded-circle avatar-sm">
+                                                    </div>
+                                                    <div class="">
+                                                        <h5 class="mb-0 mt-0">EPHOR <span class="small ms-1">(Sonnet 3.5) 12:55 PM</span></h5>
+                                                        <p>Based on the information provided in the context, the expected reduction in AWS costs from Q3 to Q4 is as follows:</p>
+                                                            <ul>
+                                                                <li>Percentage reduction: 5.2%</li>
+                                                                <li>Dollar amount: While not explicity stated, we can estimate the dollar amount based on the given information:</li>
+                                                                    <ul>
+                                                                        <li>The context mentions a 5.2% reduction in AWS costs</li>
+                                                                        <li>It's noted that there's a 7% decrease in NHC COGS to $6M in Q4, driven primarily by this 5.2% reduction in AWS costs.</li>
+                                                                    </ul>
+                                                            </ul>
+                                                            <p>Without knowing the exact Q3 AWS costs, we can't provide a precise dollar figure. However, given that the reduction is described as "significant" and is the primary driver of the overall 7% decrease in COGS, we can infer that the dollar amount is substantial.</p>
+                                                            <p>It's important to note that this reduction is part of ongoing cost optimization efforts, including:</p>
+                                                                <ul>
+                                                                    <li>Working with Virtasant and CloudFix to identify and execute cost savings</li>
+                                                                    <li>Building tooling to allow for ongoing cost optimization using SaaSOps and AI-generated runbooks</li>
+                                                                    <li>Utilizing the CloudFix DevOps Team to drive down costs on an ogoing basis</li>
+                                                                </ul>
+                                                        <p class="mb-0">These initiatives are part of a larger goal to optimize AWS spend by $1.5M/year ahead of the the AWS EDP renewal in the following year.</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-sm btn-outline-secondary ephor-tag"><i class="fa-sharp fa-light fa-trophy"></i></a>
+                                                <a href="#" class="btn btn-sm btn-outline-secondary ephor-tag"><i class="fa-light fa-thumbs-up"></i></a>
+                                                <a href="#" class="btn btn-sm btn-outline-secondary ephor-tag"><i class="fa-light fa-thumbs-down"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
 
                                     </div>
                                 </div>
